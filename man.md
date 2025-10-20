@@ -195,6 +195,10 @@ Modify to taste.
   not exist, the following directories are searched for a file with the given
   name before falling back to internal resources:
 
+  ${XDG_CONFIG_HOME}/tt/words\
+  ${XDG_CONFIG_HOME}/tt/themes\
+  ~/.config/tt/words\
+  ~/.config/tt/themes\
   ~/.tt/words\
   ~/.tt/themes\
   /etc/tt/words\
