@@ -79,7 +79,8 @@ See `-help` for an exhaustive list of options.
 
 ## Configuration
 
-Custom themes and word lists can be defined in `~/.tt/themes` and `~/.tt/words`
+Custom themes and word lists can be defined in `~/.config/tt/themes` and `~/.config/tt/words`
+(or `~/.tt/themes` and `~/.tt/words`, if no `tt` directory exists in `XDG_CONFIG_HOME`)
 and used in conjunction with the `-theme` and `-words` flags. A list of
 preloaded themes and word lists can be found in `words/` and `themes/` and are
 accessible by default using the respective flags.
