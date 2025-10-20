@@ -18,7 +18,13 @@ var CONFIG_DIRS []string
 func init() {
 	home, _ := os.LookupEnv("HOME")
 
+	configDir, isConfigSet := os.LookupEnv("XDG_CONFIG_HOME")
+	if !isConfigSet {
+		configDir = filepath.Join(home, ".config")
+	}
+
 	CONFIG_DIRS = []string{
+		filepath.Join(configDir, "tt"),
 		filepath.Join(home, ".tt"),
 		"/etc/tt",
 	}
